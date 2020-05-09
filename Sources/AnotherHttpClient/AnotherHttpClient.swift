@@ -67,7 +67,7 @@ public final class AnotherHttpClient {
     
 }
 
-extension AnotherHttpClient: NetworkPortocol {
+extension AnotherHttpClient: NetworkProtocol {
     
     public func requestData(request: NetworkRequest) -> AnyPublisher<Data, NetworkError> {
         guard let urlRequest = requestTranformer(request) else {
